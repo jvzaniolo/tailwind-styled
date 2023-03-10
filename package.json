@@ -1,0 +1,44 @@
+{
+  "name": "tailwind-styled",
+  "version": "0.0.0",
+  "description": "Inspired by Stitches and Styled Components, Tailwind Styled is a utility function that allows you to create components with a similar syntax but using Tailwind CSS classes.",
+  "main": "styled.js",
+  "types": "styled.d.ts",
+  "files": [
+    "styled.js",
+    "styled.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvzaniolo/tailwind-styled.git"
+  },
+  "bugs": {
+    "url": "https://https://github.com/jvzaniolo/tailwind-styled.git/issues"
+  },
+  "author": "João Vitor",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.0.28",
+    "class-variance-authority": "^0.4.0",
+    "tailwind-merge": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "printWidth": 120,
+    "endOfLine": "auto"
+  }
+}
