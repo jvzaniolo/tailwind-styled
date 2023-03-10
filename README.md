@@ -52,6 +52,17 @@ const Button = twStyled('button', [
 </Button>
 ```
 
+## Acknowledgements
+
+- [**cva**](https://github.com/joe-bell/cva) ([Joe Bell](https://github.com/joe-bell)) 
+  This project uses Joe's work on `cva` – a great tool for generating variants for a single element with Tailwind CSS. Big shoutout to [Joe Bell](https://github.com/joe-bell) and [contributors](https://github.com/joe-bell/cva/graphs/contributors)!
+
+- [**tailwind-merge**](https://github.com/dcastil/tailwind-merge) ([Dany Castillo](https://github.com/dcastil))
+  This project uses Dany's work on `tailwind-merge` to resolve possible Tailwind classes conflicts.
+
+- [**Styled Components**](https://styled-components.com/) and [**Stitches**](https://stitches.dev/) ([Modulz](https://modulz.app))
+  For inspiring the `styled` syntax.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
