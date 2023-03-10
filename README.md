@@ -46,10 +46,14 @@ const Button = twStyled('button', [
 
 // Usage
 // Properties are inferred from the config plus the element props
-<Button size="sm" href="/">
-  {/*             ^-- "href" does not exist on type ... */}
-  Button
-</Button>
+function App() {
+  return (
+    <Button size="sm" href="/">
+      {/*             ^-- "href" does not exist on type ... */}
+      Button
+    </Button>
+  )
+}
 ```
 
 ## Acknowledgements
