@@ -5,6 +5,9 @@
   "type": "module",
   "main": "dist/styled.js",
   "types": "dist/styled.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/*"
   ],
