@@ -1,18 +1,16 @@
 {
   "name": "tailwind-styled",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inspired by Stitches and Styled Components, Tailwind Styled is a utility function that allows you to create components with a similar syntax but using Tailwind CSS classes.",
-  "main": "dist/cjs/styled.js",
-  "module": "dist/esm/styled.js",
-  "types": "dist/esm/styled.d.ts",
+  "type": "module",
+  "main": "dist/styled.js",
+  "types": "dist/styled.d.ts",
   "files": [
     "dist/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "run-p build:*",
-    "build:cjs": "tsc",
-    "build:esm": "tsc --module esnext --target esnext --declaration --outDir dist/esm"
+    "build": "tsc"
   },
   "keywords": [
     "tailwind",

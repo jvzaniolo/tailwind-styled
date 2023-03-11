@@ -8,17 +8,16 @@ type StyledProps<C extends React.ElementType, V extends (...args: any) => any> =
 > &
   VariantProps<V> & { className?: string }
 
-export function twStyled<C extends React.ElementType, T>(component: C, config: Parameters<typeof cva<T>>) {
+export function styled<C extends React.ElementType, T>(component: C, config: Partial<Parameters<typeof cva<T>>>) {
   const Component = component
   const classVariance = cva<T>(...config)
 
-  const Styled = React.forwardRef<React.ElementRef<C>, StyledProps<C, typeof classVariance>>(
-    ({ className, ...rest }, ref) => (
-      <Component ref={ref} className={twMerge(classVariance(rest as any), className)} {...(rest as any)} />
+  const Styled = React.forwardRef<React.ElementRef<C>, StyledProps<C, typeof classVariance>>((props, ref) => {
+    const { className, ...rest } = props
+    return (
+      <Component ref={ref} className={twMerge(classVariance({ ...(rest as any), className }))} {...(rest as any)} />
     )
-  )
-
-  Styled.displayName = `StyledComponent`
+  })
 
   return Styled
 }

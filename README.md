@@ -11,9 +11,9 @@ npm install tailwind-styled
 ## Usage
 
 ```tsx
-import { twStyled } from 'tailwind-styled'
+import { styled } from 'tailwind-styled'
 
-const Button = twStyled('button', [
+const Button = styled('button', [
   // Base styles
   'px-4 py-2 rounded-md text-white',
   // Class Variance Authority config
@@ -36,8 +36,8 @@ const Button = twStyled('button', [
         css: 'px-2 py-1',
       },
     ],
-    // Default values
-    defaults: {
+    // Default Variants
+    defaultsVariants: {
       size: 'md',
       color: 'primary',
     },
@@ -58,7 +58,7 @@ function App() {
 
 ## Acknowledgements
 
-- [**cva**](https://github.com/joe-bell/cva) ([Joe Bell](https://github.com/joe-bell)) 
+- [**cva**](https://github.com/joe-bell/cva) ([Joe Bell](https://github.com/joe-bell))
   This project uses Joe's work on `cva` – a great tool for generating variants for a single element with Tailwind CSS. Big shoutout to [Joe Bell](https://github.com/joe-bell) and [contributors](https://github.com/joe-bell/cva/graphs/contributors)!
 
 - [**tailwind-merge**](https://github.com/dcastil/tailwind-merge) ([Dany Castillo](https://github.com/dcastil))
